@@ -1,13 +1,15 @@
-html,
-body {
-  min-width: 768px;
-  max-width: 1200px;
-  min-height: 2762px;
-  margin: auto;
-  padding: 0;
+html{
+  background: #f2f2f2;
 }
 
 body {
+  min-width: 768px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0;
+  background: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+
   font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -43,7 +45,7 @@ body {
   display: table;
   table-layout: auto;
   width: 40%;
-  padding: 16px;
+  padding: 15px 0;
   margin: 0;
   list-style: none;
 }
@@ -55,16 +57,29 @@ body {
 .main-navigation .menu-group:first-child {
   float: left;
   text-align: left;
+  margin-left: 6%;
 }
 
 .main-navigation .menu-group:last-child {
   float: right;
   text-align: right;
+  margin-right: 6%;
 }
 
 .menu-item a {
-  margin: 0 15px;
   text-decoration: none;
   color: #000000;
   line-height: 26px;
+}
+
+.prolog {
+  width: 100%;
+  background-image: url('../img/bg.jpg') no-repeat;
+}
+
+.content_logo {
+  display: block;
+  width: 458px;
+  margin: auto;
+  margin-top: 76px;
 }
