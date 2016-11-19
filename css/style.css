@@ -74,7 +74,7 @@ body {
 
 .prolog {
   width: 100%;
-  background-image: url('../img/bg.jpg') no-repeat;
+  background-image: url('../img/bg.jpg');
 }
 
 .content_logo {
@@ -82,4 +82,24 @@ body {
   width: 458px;
   margin: auto;
   margin-top: 76px;
+  margin-bottom: 58px;
+}
+
+.content_logo::after {
+
+}
+
+.container h1 {
+  display: block;
+  margin: auto;
+  font-size: 21px;
+  line-height: 26px;
+  margin-bottom: 32px;
+}
+
+.container p {
+  display: block;
+  margin: auto;
+  line-height: 26px;
+  font-weight: normal;
 }
