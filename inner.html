@@ -9,32 +9,31 @@
 
 <body>
     <header class="main-header">
-        <div class="container">
-            <div class="logo">
-                <a href=""><img src="img/logo.png" width="138" height="70" alt="SEDONA"></a>
-            </div>
-            <nav class="main-navigation">
-                <ul class="left">
-                    <li>
-                        <a href="#">ИНФОРМАЦИЯ</a>
-                    </li>
-                    <li>
-                        <a href="#">ФОТО И ВИДЕО</a>
-                    </li>
-                </ul>
-                <ul class="right">
-                    <li>
-                        <a href="#">КАРТА ШТАТА</a>
-                    </li>
-                    <li>
-                        <a href="#">ГОСТИНИЦЫ</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <img src="img/logo.png" width="138" height="70" alt="SEDONA">
+        </div>
+        <nav class="main-navigation clearfix">
+            <ul class="menu-group">
+                <li class="menu-item active">
+                    <a href="">ИНФОРМАЦИЯ</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">ФОТО И ВИДЕО</a>
+                </li>
+            </ul>
+            <ul class="menu-group">
+                <li class="menu-item">
+                    <a href="#">КАРТА ШТАТА</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">ГОСТИНИЦЫ</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main class="container">
-        <div class="">
-            <form action="#" method="get">
+    <section class="prolog_inner clearfix">
+        <form action="#" method="get">
+            <div class="infrastructure">
                 <fieldset>
                     <legend>ИНФРАСТРУКТУРА:</legend>
                     <div class="form-item">
@@ -50,6 +49,8 @@
                         <label for="wi_fi">Wi-Fi</label>
                     </div>
                 </fieldset>
+            </div>
+            <div class="property_type">
                 <fieldset>
                     <legend>Тип жилья:</legend>
                     <div>
@@ -65,7 +66,27 @@
                         <label for="apartaments">АПАРТАМЕНТЫ</label>
                     </div>
                 </fieldset>
-                <fieldset>
+            </div>
+            <div class="filter-range">
+                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                    <label class="min-price">от
+                        <input type="text" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">до
+                        <input type="text" name="max-price" value="3000">
+                    </label>
+                </div>
+                <div class="range-controls">
+                    <div class="scale">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="btn-transparent" type="submit">Показать</button>
+            </div>
+            <!-- <fieldset>
                     <legend>Стоимость в сутки (Р):</legend>
                     <div class="range-filter">
                         <div class="range-controls">
@@ -80,10 +101,10 @@
                             <input class="max-price" type="text" value="ДО 3000">
                         </div>
                     </div>
-                </fieldset>
-                <input type="submit" value="Показать">
-            </form>
-        </div>
+                </fieldset>-->
+        </form>
+    </section>
+    <main class="container">
         <div class="search">
             <div class="search_result">
                 <div class="result_title">
@@ -103,8 +124,10 @@
         </div>
         <div class="hotels-list">
             <ul class="hotels-item">
-                <li>
+
+                <li class="clearfix">
                     <div class="hotels-pic"><img src="img/catalog_img_1.jpg" width="135" height="90" alt=""></div>
+
                     <div class="hotels-desc">
                         <h2 class="hotels-title"><a href="">Amara Resort & Spa</a></h2>
                         <div class="hotels-text">
@@ -115,16 +138,17 @@
                             <a href="#" class="details">ПОДРОБНЕЕ</a>
                             <a href="#" class="reserve">ЗАБРОНИРОВАТЬ</a>
                         </div>
-                        <div class="rating">
-                            <div class="stars"></div>
-                            <!-- я не знаю как лучше сделать звездочки, как три разных картинки с 4, 3 и 2 соответственно или в css фоном? -->
-                            <div class="rating-text">
-                                <span>Рейтинг: 8,5</span>
-                            </div>
+                    </div>
+
+                    <div class="rating">
+                        <div class="stars"></div>
+                        <div class="rating-text">
+                            <span>Рейтинг: 8,5</span>
                         </div>
                     </div>
                 </li>
-                <li>
+
+                <li class="clearfix">
                     <div class="hotels-pic"><img src="img/catalog_img_2.jpg" width="135" height="90" alt=""></div>
                     <div class="hotels-desc">
                         <h2 class="hotels-title"><a href="">Desert Quail Inn</a></h2>
@@ -136,15 +160,16 @@
                             <a href="#" class="details">ПОДРОБНЕЕ</a>
                             <a href="#" class="reserve">ЗАБРОНИРОВАТЬ</a>
                         </div>
-                        <div class="rating">
-                            <div class="stars"></div>
-                            <div class="rating-text">
-                                <span>Рейтинг: 8,9</span>
-                            </div>
+                    </div>
+                    <div class="rating">
+                        <div class="stars"></div>
+                        <div class="rating-text">
+                            <span>Рейтинг: 8,9</span>
                         </div>
                     </div>
                 </li>
-                <li>
+
+                <li class="clearfix">
                     <div class="hotels-pic"><img src="img/catalog_img_3.jpg" width="135" height="90" alt=""></div>
                     <div class="hotels-desc">
                         <h2 class="hotels-title"><a href="">Villas at Poco Diablo</a></h2>
@@ -156,29 +181,33 @@
                             <a href="#" class="details">ПОДРОБНЕЕ</a>
                             <a href="#" class="reserve">ЗАБРОНИРОВАТЬ</a>
                         </div>
-                        <div class="rating">
-                            <div class="stars"></div>
-                            <div class="rating-text">
-                                <span>Рейтинг: 9,2</span>
-                            </div>
+                    </div>
+                    <div class="rating">
+                        <div class="stars"></div>
+                        <div class="rating-text">
+                            <span>Рейтинг: 9,2</span>
                         </div>
                     </div>
                 </li>
             </ul>
         </div>
     </main>
-    <footer class="main-footer">
-        <div class="container">
-            <div class=""><a href="">#visitSEDONA</a></div>
+    <footer class="main_footer">
+        <div class="footer_container">
+
+            <div class="tag"><a href="">#visitSEDONA</a></div>
+
             <section class="footer-social">
                 <a class="social-btn social-btn-tw" href="#">Twitter</a>
                 <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
                 <a class="social-btn social-btn-youtube" href="#">YouTube</a>
             </section>
+
             <section class="footer-copyright">
                 <div class="develop">WEBSITE by</div>
                 <a class="develop_logo" href="#"><img src="img/logo_academy.png" width="113" height="39" alt=""></a>
             </section>
+
         </div>
     </footer>
 </body>
