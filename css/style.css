@@ -73,33 +73,265 @@ body {
 }
 
 .prolog {
-  width: 100%;
-  background-image: url('../img/bg.jpg');
+  padding-bottom: 80px;
+  background-image: url('../img/mask.png'), url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 60px, 100% auto;
+  background-position: 0% 100%, 0% 20%;
 }
 
 .content_logo {
   display: block;
   width: 458px;
   margin: auto;
-  margin-top: 76px;
-  margin-bottom: 58px;
-}
-
-.content_logo::after {
-
+  padding-top: 76px;
 }
 
 .container h1 {
-  display: block;
-  margin: auto;
+  text-align: center;
   font-size: 21px;
   line-height: 26px;
+  margin-top: 60px;
   margin-bottom: 32px;
 }
 
 .container p {
-  display: block;
-  margin: auto;
+  text-align: center;
   line-height: 26px;
   font-weight: normal;
+  margin-bottom: 51px;
+}
+
+.advantages_view_1 {
+  background-color: #81b3d2;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.content_text_1 {
+  float: left;
+  width: 33.3%;
+  color: #ffffff;
+}
+
+.content_image_1 {
+  float: right;
+  width: 66.6%;
+}
+
+.advantages_view_1::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.advantages_view_1 h2, .advantages_view_2 h2 {
+  font-size: 21px;
+  padding-top: 53px;
+}
+
+.advantages_view_1 span {
+  position: relative;
+}
+
+.advantages_view_1 span::before {
+    content:'';
+    position: absolute;
+    display: block;
+    width: 9px;
+    height: 2px;
+    background-color: #ffffff;
+    top: 120px;
+    left: 20px;
+}
+
+.advantages_view_1 span::after {
+  content:'';
+    position: absolute;
+    display: block;
+    width: 9px;
+    height: 2px;
+    background-color: #ffffff;
+    top: 120px;
+    right: 20px;
+}
+
+.icon {
+  text-align: center;
+}
+
+.icon_1 {
+  float: left;
+  width: 33.3%;
+}
+
+.icon_2 {
+  float: left;
+  width: 33.3%;
+}
+
+.icon_3 {
+  float: right;
+  width: 33.3%;
+}
+
+.icon::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.icon h2 {
+   font-size: 21px;
+}
+
+.advantages_view_2 {
+  background-color: #81b3d2;
+  text-align: center;
+}
+
+.content_image_2 {
+  float: left;
+  width: 66.6%;
+}
+
+.content_text_2 {
+  float: right;
+  width: 33.3%;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.advantages_view_2 span {
+  position: relative;
+}
+
+.advantages_view_2 span::before {
+    content:'';
+    position: absolute;
+    display: block;
+    width: 9px;
+    height: 2px;
+    background-color: #ffffff;
+    top: 120px;
+    left: 20px;
+}
+
+.advantages_view_2 span::after {
+  content:'';
+    position: absolute;
+    display: block;
+    width: 9px;
+    height: 2px;
+    background-color: #ffffff;
+    top: 120px;
+    right: 20px;
+}
+
+.advantages_view_2::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.another_advantages {
+  background-color: #eeeeee;
+  text-align: center;
+  font-size: 0;
+  margin-bottom: 54px;
+}
+
+.another_advantages .advantages {
+  display: inline-block;
+  width: 33.3%;
+  vertical-align: top;
+}
+
+.advantages h2 {
+  font-size: 21px;
+  padding-top: 50px;
+}
+
+.advantages span {
+  position: relative;
+  font-size: 14px;
+}
+
+.advantages p {
+  font-size: 14px;
+}
+
+.advantages span::before {
+    content:'';
+    position: absolute;
+    display: block;
+    width: 9px;
+    height: 2px;
+    background-color: #ffffff;
+    top: 120px;
+    left: 20px;
+}
+
+.advantages span::after {
+  content:'';
+    position: absolute;
+    display: block;
+    width: 9px;
+    height: 2px;
+    background-color: #ffffff;
+    top: 120px;
+    right: 20px;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.title_form {
+  display: block;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: #766357;
+  color: #ffffff;
+  width: 568px;
+  margin: auto;
+  padding: 35px 0;
+  text-align: center;
+}
+
+.content_form {
+  background-color: #ffffff;
+  width: 568px;
+  padding: 55px;
+  position: absolute;
+  left: 50%;
+  margin-left: -284px;
+  box-sizing: border-box;
+}
+
+input [type=checkbox] {
+}
+
+.footer_container {
+  font-size: 0;
+}
+
+.tag {
+  display: inline-block;
+  width: 33.3%;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.footer-social {
+  display: inline-block;
+  width: 33.3%;
+}
+
+.footer-copyright {
+  display: inline-block;
+  width: 33.3%;
 }
