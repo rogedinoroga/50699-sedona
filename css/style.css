@@ -1,150 +1,157 @@
-html{
-  background: #f2f2f2;
+html {
+    background: #f2f2f2;
 }
 
 body {
-  min-width: 768px;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0;
-  background: #ffffff;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  color: #000000;
-  text-transform: uppercase;
-  position: relative;
+    min-width: 768px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    background: #ffffff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    text-transform: uppercase;
+    position: relative;
 }
 
+/*стили для шапки*/
+
 .main-header {
-  position: relative;
-  min-height: 56px;
+    position: relative;
+    min-height: 56px;
 }
 
 .logo {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  margin-left: -69px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -69px;
 }
 
 .logo a {
-  display: block;
+    display: block;
 }
 
 .main-navigation {
-  width: 100%;
-  min-height: 56px;
+    width: 100%;
+    min-height: 56px;
 }
 
 .clearfix::after {
-  display: table;
-  content: '';
-  clear: both;
+    display: table;
+    content: '';
+    clear: both;
 }
 
 .main-navigation .menu-group {
-  display: table;
-  table-layout: auto;
-  width: 40%;
-  padding: 15px 0;
-  margin: 0;
-  list-style: none;
+    display: table;
+    table-layout: auto;
+    width: 40%;
+    padding: 15px 0;
+    margin: 0;
+    list-style: none;
 }
 
 .main-navigation .menu-item {
-  display: table-cell;
-  line-height: 26px;
-  font-weight: bold;
+    display: table-cell;
+    line-height: 26px;
+    font-weight: bold;
 }
 
 .main-navigation .menu-group:first-child {
-  float: left;
-  text-align: left;
-  margin-left: 6%;
+    float: left;
+    text-align: left;
+    margin-left: 6%;
 }
 
 .main-navigation .menu-group:last-child {
-  float: right;
-  text-align: right;
-  margin-right: 6%;
+    float: right;
+    text-align: right;
+    margin-right: 6%;
 }
 
 .menu-item a {
-  text-decoration: none;
-  color: #000000;
+    text-decoration: none;
+    color: #000000;
 }
 
+/*стили для основной картинки*/
+
 .prolog {
-  padding-bottom: 80px;
-  background-image: url('../img/mask.png'), url('../img/bg.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 60px, 100% auto;
-  background-position: 0% 100%, 0% 20%;
+    padding-bottom: 80px;
+    background-image: url('../img/mask.png'), url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 60px, 100% auto;
+    background-position: 0% 100%, 0% 20%;
 }
 
 .content_logo {
-  display: block;
-  width: 458px;
-  margin: auto;
-  padding-top: 76px;
+    display: block;
+    width: 458px;
+    margin: auto;
+    padding-top: 76px;
 }
 
+/*стили для основого содержания*/
+
 .container h1 {
-  text-align: center;
-  font-size: 21px;
-  line-height: 26px;
-  margin-top: 58px;
-  margin-bottom: 35px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: 58px;
+    margin-bottom: 35px;
 }
 
 .container p {
-  text-align: center;
-  line-height: 26px;
-  margin-bottom: 46px;
+    text-align: center;
+    line-height: 26px;
+    margin-bottom: 46px;
 }
 
 .advantages_view_1 {
-  background-color: #81b3d2;
-  text-align: center;
-  margin-bottom: 56px;
+    background-color: #81b3d2;
+    text-align: center;
+    margin-bottom: 56px;
 }
 
 .content_text_1 {
-  float: left;
-  width: 33.3%;
-  color: #ffffff;
+    float: left;
+    width: 33.3%;
+    color: #ffffff;
 }
 
 .content_image_1 {
-  float: right;
-  width: 66.6%;
+    float: right;
+    width: 66.6%;
 }
 
 .advantages_view_1::after {
-  content: '';
-  display: table;
-  clear: both;
+    content: '';
+    display: table;
+    clear: both;
 }
 
-.advantages_view_1 h2, .advantages_view_2 h2 {
-  font-size: 21px;
-  padding-top: 53px;
-  padding-bottom: 24px;
+.advantages_view_1 h2,
+.advantages_view_2 h2 {
+    font-size: 21px;
+    padding-top: 53px;
+    padding-bottom: 24px;
 }
 
 .advantages_view_1 span {
-  position: relative;
+    position: relative;
 }
 
 .advantages_view_1 p {
-  margin-top: 0;
-  padding-top: 10px;
+    margin-top: 0;
+    padding-top: 10px;
 }
 
 .content_text_1 span::before {
-    content:'';
+    content: '';
     position: absolute;
     display: block;
     width: 9px;
@@ -155,7 +162,7 @@ body {
 }
 
 .content_text_1 span::after {
-  content:'';
+    content: '';
     position: absolute;
     display: block;
     width: 9px;
@@ -166,62 +173,62 @@ body {
 }
 
 .icon {
-  text-align: center;
+    text-align: center;
 }
 
 .icon img {
-  width: 75px;
-  height: 76px;
+    width: 75px;
+    height: 76px;
 }
 
 .icon_1 {
-  float: left;
-  width: 33.3%;
+    float: left;
+    width: 33.3%;
 }
 
 .icon_2 {
-  float: left;
-  width: 33.3%;
+    float: left;
+    width: 33.3%;
 }
 
 .icon_3 {
-  float: right;
-  width: 33.3%;
+    float: right;
+    width: 33.3%;
 }
 
 .icon::after {
-  content: '';
-  display: table;
-  clear: both;
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .icon h2 {
-   font-size: 21px;
+    font-size: 21px;
 }
 
 .advantages_view_2 {
-  background-color: #81b3d2;
-  text-align: center;
+    background-color: #81b3d2;
+    text-align: center;
 }
 
 .content_image_2 {
-  float: left;
-  width: 66.6%;
+    float: left;
+    width: 66.6%;
 }
 
 .content_text_2 {
-  float: right;
-  width: 33.3%;
-  background-color: #81b3d2;
-  color: #ffffff;
+    float: right;
+    width: 33.3%;
+    background-color: #81b3d2;
+    color: #ffffff;
 }
 
 .advantages_view_2 span {
-  position: relative;
+    position: relative;
 }
 
 .content_text_2 span::before {
-    content:'';
+    content: '';
     position: absolute;
     display: block;
     width: 9px;
@@ -232,7 +239,7 @@ body {
 }
 
 .content_text_2 span::after {
-  content:'';
+    content: '';
     position: absolute;
     display: block;
     width: 9px;
@@ -243,42 +250,42 @@ body {
 }
 
 .advantages_view_2::after {
-  content: '';
-  display: table;
-  clear: both;
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .another_advantages {
-  background-color: #eeeeee;
-  text-align: center;
-  font-size: 0;
-  margin-bottom: 54px;
+    background-color: #eeeeee;
+    text-align: center;
+    font-size: 0;
+    margin-bottom: 54px;
 }
 
 .another_advantages .advantages {
-  display: inline-block;
-  width: 33.3%;
-  vertical-align: top;
+    display: inline-block;
+    width: 33.3%;
+    vertical-align: top;
 }
 
 .advantages h2 {
-  font-size: 21px;
-  padding-top: 53px;
-  padding-bottom: 24px;
-  margin: 0;
+    font-size: 21px;
+    padding-top: 53px;
+    padding-bottom: 24px;
+    margin: 0;
 }
 
 .advantages span {
-  position: relative;
-  font-size: 14px;
+    position: relative;
+    font-size: 14px;
 }
 
 .advantages p {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .another_advantages span::before {
-    content:'';
+    content: '';
     position: absolute;
     display: block;
     width: 9px;
@@ -289,7 +296,7 @@ body {
 }
 
 .another_advantages span::after {
-  content:'';
+    content: '';
     position: absolute;
     display: block;
     width: 9px;
@@ -300,111 +307,111 @@ body {
 }
 
 .title {
-  font-size: 30px;
-  line-height: 24px;
-  text-align: center;
-  margin-bottom: 32px;
+    font-size: 30px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 32px;
 }
 
 .title_form {
-  display: block;
-  font-size: 21px;
-  line-height: 26px;
-  background-color: #766357;
-  color: #ffffff;
-  width: 568px;
-  margin: auto;
-  padding: 35px 0;
-  text-align: center;
+    display: block;
+    font-size: 21px;
+    line-height: 26px;
+    background-color: #766357;
+    color: #ffffff;
+    width: 568px;
+    margin: auto;
+    padding: 35px 0;
+    text-align: center;
 }
 
 /* форма поиска гостиницы*/
 
 .content_form {
-  background-color: #ffffff;
-  width: 568px;
-  padding: 55px;
-  position: absolute;
-  left: 50%;
-  margin-left: -284px;
-  box-sizing: border-box;
+    background-color: #ffffff;
+    width: 568px;
+    padding: 55px;
+    position: absolute;
+    left: 50%;
+    margin-left: -284px;
+    box-sizing: border-box;
 }
 
 form {
-  line-height: 26px;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-  font-weight: bold;
+    line-height: 26px;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .content_form input {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 .form-item input {
-  width: 345px;
-  padding: 10px;
-  border: none;
-  box-sizing: border-box;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  float: right;
-  text-transform: uppercase;
+    width: 345px;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    float: right;
+    text-transform: uppercase;
 }
 
 .form-field.left label {
-  margin-right: 22px;
+    margin-right: 22px;
 }
 
 .form-field.left {
-  float: left;
-  width: 50%;
+    float: left;
+    width: 50%;
 }
 
 .form-field.right {
-  float: right;
-  width: 50%;
-  text-align: right;
+    float: right;
+    width: 50%;
+    text-align: right;
 }
 
 .form-field.right label {
-  margin-right: 22px;
-
+    margin-right: 22px;
 }
 
 .form-field .counter {
-  display: inline-block;
-  font-size: 0;
+    display: inline-block;
+    font-size: 0;
 }
 
 .form-field .counter button {
-  width: 35px;
-  height: 35px;
+    width: 35px;
+    height: 35px;
 }
 
 .form-field .counter input {
-  height: 33px;
-  font-size: 14px;
+    height: 33px;
+    font-size: 14px;
 }
 
 .form-field {
-  padding: 10px 0;
-  margin-bottom: 50px;
+    padding: 10px 0;
+    margin-bottom: 50px;
 }
+
 .form-field input {
-  width: 38px;
-  text-align: center;
-  font-size: 14px;
-  border: none;
+    width: 38px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
 }
 
 .form-field button {
-  font-size: 14px;
-  border: none;
-  background: #f2f2f2;
+    font-size: 14px;
+    border: none;
+    background: #f2f2f2;
 }
 
 .form-item {
-  margin-bottom: 35px;
+    margin-bottom: 35px;
 }
 
 input[type="submit"] {
@@ -422,294 +429,252 @@ input[type="submit"] {
 /*подвал главной страницы*/
 
 .main_footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color:rgba(255, 255, 255, 0.9);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer_container {
-  font-size: 0;
-  padding: 30px 0;
+    font-size: 0;
+    padding: 30px 0;
 }
 
 .tag {
-  display: inline-block;
-  width: 33.3%;
-  font-size: 21px;
-  line-height: 26px;
-  vertical-align: top;
-  text-align: center;
-  margin-top: 10px;
+    display: inline-block;
+    width: 33.3%;
+    font-size: 21px;
+    line-height: 26px;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .tag a {
-  color: #000000;
-  font-weight: bold;
-  text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-
 .footer-social {
-  display: inline-block;
-  width: 33.3%;
-  vertical-align: top;
-  font-size: 0;
-  text-align: center;
+    display: inline-block;
+    width: 33.3%;
+    vertical-align: top;
+    font-size: 0;
+    text-align: center;
 }
 
 .footer-copyright {
-  display: inline-block;
-  width: 33.3%;
-  vertical-align: top;
-  font-size: 14px;
-  text-align: center;
+    display: inline-block;
+    width: 33.3%;
+    vertical-align: top;
+    font-size: 14px;
+    text-align: center;
 }
-
-
 
 .social-btn:last-child {
- margin-right: 0;
-}
-
-
-.calendar{
-  background-position: -13px -66px ;
-  width: 21px;
-  height: 22px;
-}
-
-
-
-.star{
-  background-position: -14px -15px ;
-  width: 17px;
-  height: 17px;
+    margin-right: 0;
 }
 
 .footer-social .social-btn-fb {
-  background-position: 0 -198px ;
-  /*width: 10px;
-  height: 19px;*/
+    background-position: 0 -198px;
+    /*width: 10px;
+    height: 19px;*/
 }
 
 .footer-social .social-btn-tw {
-  background-position: 0 -103px ;
-/*  width: 17px;
-  height: 15px;*/
+    background-position: 0 -103px;
+    /*  width: 17px;
+    height: 15px;*/
 }
 
 .footer-social .social-btn-youtube {
-  background-position: 0 -150px ;
-  /*width: 20px;
-  height: 16px;*/
+    background-position: 0 -150px;
+    /*width: 20px;
+    height: 16px;*/
 }
 
 .social-btn {
-  display: inline-block;
-  margin-right: 5px;
-  width: 50px;
-  height: 50px;
-  background: url(../img/sprites.png) no-repeat #81b3d2;
-
+    display: inline-block;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/sprites.png) no-repeat #81b3d2;
 }
 
 .calendar {
-  background-position: -5px -66px ;
-  width: 21px;
-  height: 22px;
+    background-position: -5px -66px;
+    width: 21px;
+    height: 22px;
 }
 
 .star {
-  background-position: -8px -44px ;
-  width: 17px;
-  height: 17px;
-}
-
-.icon_youtube {
-  background-position: -7px -92px ;
-  width: 20px;
-  height: 16px;
+    background-position: -8px -44px;
+    width: 17px;
+    height: 17px;
 }
 
 /*стили для внутренней страницы*/
+
 .prolog_inner {
-  padding-bottom: 80px;
-  background-image: url('../img/catalog_bg.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: 0% 100%;
+    padding-bottom: 80px;
+    background-image: url('../img/catalog_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 0% 100%;
 }
 
 .infrastructure {
-  float: left;
-  width: 33.3%;
+    float: left;
+    width: 33.3%;
 }
 
 .property_type {
-  float: left;
-  width: 33.3%;
+    float: left;
+    width: 33.3%;
 }
 
 .filter-range {
-  float: right;
-  width: 33.3%;
+    float: right;
+    width: 33.3%;
 }
 
 .search_result {
-  display: inline-block;
+    display: inline-block;
 }
 
 .filter {
-  display: inline-block;
+    display: inline-block;
 }
 
 .hotels-pic {
-  float: left;
-  width: 135px;
+    float: left;
+    width: 135px;
 }
 
 .hotels-desc {
-  float: left;
+    float: left;
 }
 
 .rating {
-  float: right;
-  width: 111px;
+    float: right;
+    width: 111px;
 }
+
 
 /* фильтр*/
 
-
 .filter-range {
-  width: 330px;
-  color: #ffffff;
-  text-transform: uppercase;
+    width: 330px;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
-
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 21px;
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
 }
 
 .price-controls {
-  position: relative;
-
-  height: 36px;
-  margin-bottom: 20px;
-
-  font-size: 0;
-
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+    position: relative;
+    height: 36px;
+    margin-bottom: 20px;
+    font-size: 0;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
 }
 
 .price-controls::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 2px;
-  height: 22px;
-
-  background: #ffffff;
-  transform: translate(-50%, -50%);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
 }
 
 .price-controls label {
-  display: inline-block;
-
-  font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
-
-  cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
+    width: 90px;
+    padding-left: 65px;
 }
 
 .price-controls input {
-  width: 50px;
-  margin: 0;
-
-  color: inherit;
-  font: inherit;
-
-  background: none;
-  border: none;
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
 }
 
 .range-controls {
-  position: relative;
-
-  margin-bottom: 32px;
+    position: relative;
+    margin-bottom: 32px;
 }
 
 .range-controls .scale {
-  height: 2px;
-
-  background: rgba(255, 255, 255, 0.3);
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
-  width: 80%;
-  height: 2px;
-
-  background: #ffffff;
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
 }
 
 .range-toggle {
-  position: absolute;
-  top: -9px;
-
-  width: 4px;
-  height: 4px;
-
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+    background: #1c4f80;
 }
 
 .range-toggle-min {
-  left: 0;
+    left: 0;
 }
 
 .range-toggle-max {
-  left: 80%;
+    left: 80%;
 }
 
 .btn-transparent {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
-
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 .btn-transparent:hover {
-  color: #000000;
-
-  background: #ffffff;
+    color: #000000;
+    background: #ffffff;
 }
