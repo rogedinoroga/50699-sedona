@@ -1,12 +1,10 @@
 html{
   background: #f2f2f2;
-
 }
 
 body {
   min-width: 768px;
   max-width: 1200px;
-
   margin: auto;
   padding: 0;
   background: #ffffff;
@@ -15,8 +13,8 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #000000;
-  font-weight: bold;
   text-transform: uppercase;
+  position: relative;
 }
 
 .main-header {
@@ -29,6 +27,10 @@ body {
   left: 50%;
   top: 0;
   margin-left: -69px;
+}
+
+.logo a {
+  display: block;
 }
 
 .main-navigation {
@@ -53,6 +55,8 @@ body {
 
 .main-navigation .menu-item {
   display: table-cell;
+  line-height: 26px;
+  font-weight: bold;
 }
 
 .main-navigation .menu-group:first-child {
@@ -70,14 +74,7 @@ body {
 .menu-item a {
   text-decoration: none;
   color: #000000;
-  line-height: 26px;
 }
-
-
-
-
-
-
 
 .prolog {
   padding-bottom: 80px;
@@ -98,15 +95,14 @@ body {
   text-align: center;
   font-size: 21px;
   line-height: 26px;
-  margin-top: 60px;
-  margin-bottom: 32px;
+  margin-top: 58px;
+  margin-bottom: 35px;
 }
 
 .container p {
   text-align: center;
   line-height: 26px;
-  font-weight: normal;
-  margin-bottom: 51px;
+  margin-bottom: 46px;
 }
 
 .advantages_view_1 {
@@ -135,36 +131,47 @@ body {
 .advantages_view_1 h2, .advantages_view_2 h2 {
   font-size: 21px;
   padding-top: 53px;
+  padding-bottom: 24px;
 }
 
 .advantages_view_1 span {
   position: relative;
 }
 
-.advantages_view_1 span::before {
+.advantages_view_1 p {
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.content_text_1 span::before {
     content:'';
     position: absolute;
     display: block;
     width: 9px;
     height: 2px;
     background-color: #ffffff;
-    top: 120px;
-    left: 20px;
+    top: 7px;
+    left: 26px;
 }
 
-.advantages_view_1 span::after {
+.content_text_1 span::after {
   content:'';
     position: absolute;
     display: block;
     width: 9px;
     height: 2px;
     background-color: #ffffff;
-    top: 120px;
-    right: 20px;
+    top: 7px;
+    right: 28px;
 }
 
 .icon {
   text-align: center;
+}
+
+.icon img {
+  width: 75px;
+  height: 76px;
 }
 
 .icon_1 {
@@ -213,26 +220,26 @@ body {
   position: relative;
 }
 
-.advantages_view_2 span::before {
+.content_text_2 span::before {
     content:'';
     position: absolute;
     display: block;
     width: 9px;
     height: 2px;
     background-color: #ffffff;
-    top: 120px;
-    left: 20px;
+    top: 7px;
+    left: 26px;
 }
 
-.advantages_view_2 span::after {
+.content_text_2 span::after {
   content:'';
     position: absolute;
     display: block;
     width: 9px;
     height: 2px;
     background-color: #ffffff;
-    top: 120px;
-    right: 20px;
+    top: 7px;
+    right: 28px;
 }
 
 .advantages_view_2::after {
@@ -256,7 +263,9 @@ body {
 
 .advantages h2 {
   font-size: 21px;
-  padding-top: 50px;
+  padding-top: 53px;
+  padding-bottom: 24px;
+  margin: 0;
 }
 
 .advantages span {
@@ -268,26 +277,26 @@ body {
   font-size: 14px;
 }
 
-.advantages span::before {
+.another_advantages span::before {
     content:'';
     position: absolute;
     display: block;
     width: 9px;
     height: 2px;
-    background-color: #ffffff;
-    top: 120px;
-    left: 20px;
+    background-color: #a8a8a8;
+    top: 7px;
+    left: 26px;
 }
 
-.advantages span::after {
+.another_advantages span::after {
   content:'';
     position: absolute;
     display: block;
     width: 9px;
     height: 2px;
-    background-color: #ffffff;
-    top: 120px;
-    right: 20px;
+    background-color: #a8a8a8;
+    top: 7px;
+    right: 28px;
 }
 
 .title {
@@ -309,6 +318,8 @@ body {
   text-align: center;
 }
 
+/* форма поиска гостиницы*/
+
 .content_form {
   background-color: #ffffff;
   width: 568px;
@@ -319,11 +330,107 @@ body {
   box-sizing: border-box;
 }
 
-input [type=checkbox] {
+form {
+  line-height: 26px;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.content_form input {
+  background-color: #f2f2f2;
+}
+
+.form-item input {
+  width: 345px;
+  padding: 10px;
+  border: none;
+  box-sizing: border-box;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  float: right;
+  text-transform: uppercase;
+}
+
+.form-field.left label {
+  margin-right: 22px;
+}
+
+.form-field.left {
+  float: left;
+  width: 50%;
+}
+
+.form-field.right {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.form-field.right label {
+  margin-right: 22px;
+
+}
+
+.form-field .counter {
+  display: inline-block;
+  font-size: 0;
+}
+
+.form-field .counter button {
+  width: 35px;
+  height: 35px;
+}
+
+.form-field .counter input {
+  height: 33px;
+  font-size: 14px;
+}
+
+.form-field {
+  padding: 10px 0;
+  margin-bottom: 50px;
+}
+.form-field input {
+  width: 38px;
+  text-align: center;
+  font-size: 14px;
+  border: none;
+}
+
+.form-field button {
+  font-size: 14px;
+  border: none;
+  background: #f2f2f2;
+}
+
+.form-item {
+  margin-bottom: 35px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 6px 15px;
+    color: #ffffff;
+    background: #81b3d2;
+    border: none;
+    padding: 20px;
+}
+
+/*подвал главной страницы*/
+
+.main_footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color:rgba(255, 255, 255, 0.9);
 }
 
 .footer_container {
   font-size: 0;
+  padding: 30px 0;
 }
 
 .tag {
@@ -332,18 +439,97 @@ input [type=checkbox] {
   font-size: 21px;
   line-height: 26px;
   vertical-align: top;
+  text-align: center;
+  margin-top: 10px;
 }
+
+.tag a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 
 .footer-social {
   display: inline-block;
   width: 33.3%;
   vertical-align: top;
+  font-size: 0;
+  text-align: center;
 }
 
 .footer-copyright {
   display: inline-block;
   width: 33.3%;
   vertical-align: top;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+
+.social-btn:last-child {
+ margin-right: 0;
+}
+
+
+.calendar{
+  background-position: -13px -66px ;
+  width: 21px;
+  height: 22px;
+}
+
+
+
+.star{
+  background-position: -14px -15px ;
+  width: 17px;
+  height: 17px;
+}
+
+.footer-social .social-btn-fb {
+  background-position: 0 -198px ;
+  /*width: 10px;
+  height: 19px;*/
+}
+
+.footer-social .social-btn-tw {
+  background-position: 0 -103px ;
+/*  width: 17px;
+  height: 15px;*/
+}
+
+.footer-social .social-btn-youtube {
+  background-position: 0 -150px ;
+  /*width: 20px;
+  height: 16px;*/
+}
+
+.social-btn {
+  display: inline-block;
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  background: url(../img/sprites.png) no-repeat #81b3d2;
+
+}
+
+.calendar {
+  background-position: -5px -66px ;
+  width: 21px;
+  height: 22px;
+}
+
+.star {
+  background-position: -8px -44px ;
+  width: 17px;
+  height: 17px;
+}
+
+.icon_youtube {
+  background-position: -7px -92px ;
+  width: 20px;
+  height: 16px;
 }
 
 /*стили для внутренней страницы*/
