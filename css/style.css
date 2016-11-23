@@ -17,9 +17,10 @@ body {
     position: relative;
 }
 
+
 /*стили для шапки*/
 
-.main-header {
+.main_header {
     position: relative;
     min-height: 56px;
 }
@@ -35,9 +36,17 @@ body {
     display: block;
 }
 
-.main-navigation {
+.main_navigation {
     width: 100%;
     min-height: 56px;
+}
+
+.main_navigation a {
+  color: #000000;
+}
+
+.main_navigation a:hover {
+  color: #81b3d2;
 }
 
 .clearfix::after {
@@ -46,7 +55,7 @@ body {
     clear: both;
 }
 
-.main-navigation .menu-group {
+.main_navigation .menu_group {
     display: table;
     table-layout: auto;
     width: 40%;
@@ -55,28 +64,29 @@ body {
     list-style: none;
 }
 
-.main-navigation .menu-item {
+.main_navigation .menu_item {
     display: table-cell;
     line-height: 26px;
     font-weight: bold;
 }
 
-.main-navigation .menu-group:first-child {
+.main_navigation .menu_group:first-child {
     float: left;
     text-align: left;
     margin-left: 6%;
 }
 
-.main-navigation .menu-group:last-child {
+.main_navigation .menu_group:last-child {
     float: right;
     text-align: right;
     margin-right: 6%;
 }
 
-.menu-item a {
+.menu_item a {
     text-decoration: none;
     color: #000000;
 }
+
 
 /*стили для основной картинки*/
 
@@ -94,6 +104,7 @@ body {
     margin: auto;
     padding-top: 76px;
 }
+
 
 /*стили для основого содержания*/
 
@@ -325,6 +336,16 @@ body {
     text-align: center;
 }
 
+.map {
+    height: 600px;
+    overflow: hidden;
+}
+
+.map_nojs {
+    background: url(../img/map.jpg) no-repeat 50% 50%;
+}
+
+
 /* форма поиска гостиницы*/
 
 .content_form {
@@ -337,84 +358,122 @@ body {
     box-sizing: border-box;
 }
 
-form {
-    line-height: 26px;
-    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
 .content_form input {
     background-color: #f2f2f2;
 }
 
-.form-item input {
-    width: 345px;
-    padding: 10px;
-    border: none;
+.form_item input:hover {
+  background-color: #ebebeb;
+}
+
+.form_item button:hover {
+  background-color: #ebebeb;
+}
+
+form {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.form_item {
+    margin-bottom: 30px;
+}
+
+.form_item label {
+    float: left;
+    width: 125px;
+    padding: 8px 16px 6px 0;
+    box-sizing: border-box;
+}
+
+.form_item input {
+    float: left;
+    position: relative;
+    width: 294px;
+    padding: 8px 167px 8px 15px;
     box-sizing: border-box;
     font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-weight: bold;
-    float: right;
     text-transform: uppercase;
+    border: none;
 }
 
-.form-field.left label {
-    margin-right: 22px;
+.form_item button {
+    background-image: url('../img/sprites.png');
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+    background-position: -5px -61px;
+    float: left;
+    width: 39px;
+    height: 32px;
+    box-sizing: border-box;
+    border: none;
 }
 
-.form-field.left {
+.form_field {
+    margin-bottom: 54px;
+}
+
+.form_field .counter {
+    display: inline-block;
+    font-size: 0;
+}
+
+.form_field .counter button,
+.form_field .counter input {
+    font-size: 14px;
+    line-height: 26px;
+    border: none;
+    background: #f2f2f2;
+    width: 38px;
+    height: 38px;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form_field .counter input {
+    height: 36px;
+}
+
+.form_field .counter button {
+  color: #a9a9a9;
+}
+
+.form_field.left {
     float: left;
     width: 50%;
 }
 
-.form-field.right {
+.form_field.left label {
+    width: 112px;
+    padding: 8px 21px 7px 0;
+    box-sizing: border-box;
+}
+
+.form_field.left .counter {
+    width: 117px;
+    text-align: right;
+}
+
+.form_field.right {
     float: right;
     width: 50%;
     text-align: right;
 }
 
-.form-field.right label {
-    margin-right: 22px;
-}
-
-.form-field .counter {
-    display: inline-block;
-    font-size: 0;
-}
-
-.form-field .counter button {
-    width: 35px;
-    height: 35px;
-}
-
-.form-field .counter input {
-    height: 33px;
-    font-size: 14px;
-}
-
-.form-field {
-    padding: 10px 0;
-    margin-bottom: 50px;
-}
-
-.form-field input {
-    width: 38px;
-    text-align: center;
-    font-size: 14px;
-    border: none;
-}
-
-.form-field button {
-    font-size: 14px;
-    border: none;
-    background: #f2f2f2;
-}
-
-.form-item {
-    margin-bottom: 35px;
+.form_field.right label {
+    width: 115px;
+    padding: 8px 0 7px;
+    box-sizing: border-box;
+    margin-right: 27px;
 }
 
 input[type="submit"] {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
     display: block;
     width: 100%;
     height: auto;
@@ -425,6 +484,15 @@ input[type="submit"] {
     border: none;
     padding: 20px;
 }
+
+input[type="submit"]:hover {
+  background-color: #669ec0;
+}
+
+input[type="submit"]:focus {
+  background-color: #5496bd;
+}
+
 
 /*подвал главной страницы*/
 
@@ -456,7 +524,7 @@ input[type="submit"] {
     text-decoration: none;
 }
 
-.footer-social {
+.footer_social {
     display: inline-block;
     width: 33.3%;
     vertical-align: top;
@@ -464,7 +532,7 @@ input[type="submit"] {
     text-align: center;
 }
 
-.footer-copyright {
+.footer_copyright {
     display: inline-block;
     width: 33.3%;
     vertical-align: top;
@@ -472,29 +540,29 @@ input[type="submit"] {
     text-align: center;
 }
 
-.social-btn:last-child {
+.social_btn:last-child {
     margin-right: 0;
 }
 
-.footer-social .social-btn-fb {
+.footer_social .social_btn_fb {
     background-position: 0 -198px;
     /*width: 10px;
     height: 19px;*/
 }
 
-.footer-social .social-btn-tw {
+.footer_social .social_btn_tw {
     background-position: 0 -103px;
     /*  width: 17px;
     height: 15px;*/
 }
 
-.footer-social .social-btn-youtube {
+.footer_social .social_btn_youtube {
     background-position: 0 -150px;
     /*width: 20px;
     height: 16px;*/
 }
 
-.social-btn {
+.social_btn {
     display: inline-block;
     margin-right: 5px;
     width: 50px;
@@ -513,6 +581,7 @@ input[type="submit"] {
     width: 17px;
     height: 17px;
 }
+
 
 /*стили для внутренней страницы*/
 

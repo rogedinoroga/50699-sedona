@@ -10,29 +10,29 @@
 
 <body>
 
-    <header class="main-header">
+    <header class="main_header">
 
         <div class="logo">
-            <a href="#"><img src="img/logo.png" width="138" height="70" alt="SEDONA"></a>
+            <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="SEDONA"></a>
         </div>
 
-        <nav class="main-navigation clearfix">
+        <nav class="main_navigation clearfix">
 
-            <ul class="menu-group">
-                <li class="menu-item active">
-                    <a href="inner.html">ИНФОРМАЦИЯ</a>
+            <ul class="menu_group">
+                <li class="menu_item active">
+                    <a href="index.html">ИНФОРМАЦИЯ</a>
                 </li>
-                <li class="menu-item">
+                <li class="menu_item">
                     <a href="#">ФОТО И ВИДЕО</a>
                 </li>
             </ul>
 
-            <ul class="menu-group">
-                <li class="menu-item">
+            <ul class="menu_group">
+                <li class="menu_item">
                     <a href="#">КАРТА ШТАТА</a>
                 </li>
-                <li class="menu-item">
-                    <a href="#">ГОСТИНИЦЫ</a>
+                <li class="menu_item">
+                    <a href="inner.html">ГОСТИНИЦЫ</a>
                 </li>
             </ul>
 
@@ -140,35 +140,37 @@
 
         <div class="content_form">
 
-            <form action="#" method="get">
+            <form action="#" method="post">
 
-                <div class="form-item">
+                <div class="form_item clearfix">
                     <label for="arrival">Дата заезда:</label>
                     <input type="text" name="arrival_date" id="arrival" value="24 Апреля 2016">
+                    <button type="button"></button>
                 </div>
 
-                <div class="form-item">
+                <div class="form_item clearfix">
                     <label for="departure">Дата Выезда:</label>
                     <input type="text" name="date_departure" id="departure" value="4 июля 2016">
+                    <button type="button"></button>
                 </div>
 
-                <div class="form-field left">
+                <div class="form_field left">
 
                     <label for="adults">ВзрослыЕ:</label>
                     <div class="counter">
                         <button type="button">-</button>
-                        <input type="text" name="adults" value="2">
+                        <input type="text" name="adults" value="2" id="adults">
                         <button type="button">+</button>
                     </div>
 
                 </div>
 
-                <div class="form-field right">
+                <div class="form_field right">
 
                     <label for="children">ДетИ:</label>
                     <div class="counter">
                         <button type="button">-</button>
-                        <input type="text" name="children" value="0">
+                        <input type="text" name="children" value="0" id="children">
                         <button type="button">+</button>
                     </div>
 
@@ -180,7 +182,7 @@
 
         </div>
 
-        <div>
+        <div class="map map_nojs">
             <img src="img/map.jpg" width="1200" height="593" alt="">
         </div>
 
@@ -192,13 +194,13 @@
 
             <div class="tag"><a href="">#visitSEDONA</a></div>
 
-            <section class="footer-social">
-                <a class="social-btn social-btn-tw" href="#"></a>
-                <a class="social-btn social-btn-fb" href="#"></a>
-                <a class="social-btn social-btn-youtube" href="#"></a>
+            <section class="footer_social">
+                <a class="social_btn social_btn_tw" href="#"></a>
+                <a class="social_btn social_btn_fb" href="#"></a>
+                <a class="social_btn social_btn_youtube" href="#"></a>
             </section>
 
-            <section class="footer-copyright">
+            <section class="footer_copyright">
                 <a class="develop_logo" href="#"><img src="img/logo_academy.png" width="195" height="39" alt=""></a>
             </section>
 
